@@ -60,7 +60,7 @@ def main(exec_func: Callable, urls: list):
     exec_func(urls)
 
     if len(RESPONSES) >= 50:
-        print(len(RESPONSES))
+        print('Requests made - ', len(RESPONSES))
         print('Total time: ', time.time() - start)
     else:
         print('something went wrong, no time')
